@@ -331,7 +331,7 @@
       transform: translateY(-2px) scale(1.02);
     }
 
-    /* Action buttons with different colors */
+
     .btn-add {
       background: linear-gradient(45deg, #00ff88, #00b4d8);
     }
@@ -385,7 +385,7 @@
   </style>
 </head>
 <body>
-  <!-- Animated background particles -->
+
   <div class="particles"></div>
 
   <header>
@@ -430,7 +430,6 @@
           </tr>
         </thead>
         <tbody id="studentTableBody">
-          <!-- PHP content will be inserted here -->
         </tbody>
       </table>
     </div>
@@ -449,7 +448,6 @@
   </div>
 
   <script>
-    // Create animated background particles
     function createParticles() {
       const particles = document.querySelector('.particles');
       const particleCount = 50;
@@ -474,7 +472,6 @@
       }
     }
 
-    // Animate numbers counting up
     function animateNumber(element, target) {
       let current = 0;
       const increment = target / 50;
@@ -488,18 +485,15 @@
       }, 30);
     }
 
-    // Initialize page
     document.addEventListener('DOMContentLoaded', function() {
       createParticles();
       
-      // Mock data for demonstration (replace with actual PHP data)
       const sampleStudents = [
         { id: '2021-001', name: 'John Doe', course: 'Computer Science' },
         { id: '2021-002', name: 'Jane Smith', course: 'Information Technology' },
         { id: '2021-003', name: 'Mike Johnson', course: 'Software Engineering' }
       ];
 
-      // Populate table
       const tbody = document.getElementById('studentTableBody');
       sampleStudents.forEach((student, index) => {
         const row = document.createElement('tr');
@@ -512,13 +506,12 @@
         tbody.appendChild(row);
       });
 
-      // Animate statistics
+
       setTimeout(() => {
         animateNumber(document.getElementById('totalStudents'), sampleStudents.length);
         animateNumber(document.getElementById('totalCourses'), new Set(sampleStudents.map(s => s.course)).size);
       }, 500);
 
-      // Add hover effects to table rows
       const rows = document.querySelectorAll('tbody tr');
       rows.forEach(row => {
         row.addEventListener('mouseenter', function() {
@@ -530,7 +523,6 @@
       });
     });
 
-    // Add scroll effects
     window.addEventListener('scroll', function() {
       const header = document.querySelector('header');
       if (window.scrollY > 100) {
