@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WST Final Project</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #121212;
+      color: #fff;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .left-section {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .class-section {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      font-family: 'Georgia', serif;
+      color: #ffffff;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+    .member-card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .member-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .member-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #00adb5;
+    }
+
+    .role {
+      color: #00adb5;
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .info {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="left-section">
+      <h1>WST Final Project</h1>
+      <nav>
+        <a href="index.php">Home</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </div>
+    <div class="class-section">BSIT 3A-G2</div>
+  </header>
+
+  <h2>Meet Our Team</h2>
+  <div class="team-container">
+    <div class="member-card">
+      <img src="imgs/josh_pic.jpeg" alt="Member 1">
+      <h3>Josh Gabriel M. Española</h3>
+      <div class="role">Project Manager, Coder</div>
+      <div class="info">
+        Age: 22<br>
+        Address: Meycauayan, Bulacan<br>
+        Hobbies: Gaming, Listening to Music, Watching Movies, Reading Comic Books
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="imgs/jervine_pic.jpg" alt="Member 2">
+      <h3>Jervine Conrad C. Fajardo</h3>
+      <div class="role">UI/UX Designer, Coder</div> 
+      <div class="info">
+        Age: 21<br>
+        Address: Malolos, Bulacan<br>
+        Hobbies: Drawing, Watching Movies, Exploring Designs
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
